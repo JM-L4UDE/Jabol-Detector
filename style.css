@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #000;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .video-container {
+    position: relative; right: 300px; bottom: 250px;
+  }
+  
+  video, canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(1); /* Not mirrored */
+    border: 6px solid #00ffcc;
+    box-shadow: 0 0 30px #00ffcc;
+    border-radius: 8px;
+  }
+  
+  #overlay-text {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px black;
+    z-index: 10;
+  }
+  
